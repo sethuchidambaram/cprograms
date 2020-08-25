@@ -1,0 +1,101 @@
+#include<stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int lcs(char *m1,char *m2,int len1,int len2);
+int max(int a,int b);
+
+
+int main()
+{
+    
+    char *p1="abcdab";
+     
+    char *p2="bdcaba";
+    
+    int len1=strlen(p1);
+    
+    int len2=strlen(p2);
+    
+}    
+    
+int lcs(char *m1,char *m2,int len1,int len2)
+{
+       int count=0;
+       
+       if(len1 > 0 && len2 > 0)
+       {
+            if( *(m+len1-1) == *(m2+len2-1) )
+            {
+                count=lcs(char *p1,char *p2,len1-1,len2-1);
+                
+                return count+1;
+            }
+            else
+            {
+                return max(lcs(char *p1,char *p2,len1-1,len2),lcs(char *p1,char *p2,len1,len2-1));
+                
+            }    
+        }
+        else
+        {
+            return 0;
+        }
+ 
+ }       
+            
+
+int max(int a,int b)
+{
+
+
+    return (a > b ) ? a:b;
+    
+}
+
+
+           
+            
+            
+         
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+    
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
